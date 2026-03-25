@@ -1,19 +1,19 @@
 var langObj = {
   en: {
-    LOADING_TEXT1: "We are preparing",
-    LOADING_TEXT1_2: "a special experience just for you.",
+    LOADING_TEXT1: "Connecting to K-Line",
+    LOADING_TEXT1_2: "to explore Korean products.",
     LOADING_TEXT2: "Please wait a moment.",
     LOADING_APP_BTN: "Start in the official app",
   },
   th: {
-    LOADING_TEXT1: "เรากำลังเตรียมประสบการณ์พิเศษ",
-    LOADING_TEXT1_2: "สำหรับคุณ",
+    LOADING_TEXT1: "กำลังเชื่อมต่อกับ K-Line",
+    LOADING_TEXT1_2: "เพื่อให้คุณได้พบกับสินค้าเกาหลี",
     LOADING_TEXT2: "กรุณารอสักครู่",
     LOADING_APP_BTN: "เริ่มใช้งานทันทีในแอปอย่างเป็นทางการ",
   },
   ko: {
-    LOADING_TEXT1: "당신을 위한 특별한 경험을",
-    LOADING_TEXT1_2: "준비하고 있습니다.",
+    LOADING_TEXT1: "한국 상품을 만나볼 수 있는",
+    LOADING_TEXT1_2: "K-Line에 연결 중입니다.",
     LOADING_TEXT2: "잠시만 기다려주세요.",
     LOADING_APP_BTN: "공식 앱으로 바로 시작하기",
   },
