@@ -1,0 +1,279 @@
+#blankOverlay {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinner {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  animation: spin 0.85s linear infinite;
+}
+
+.spiral {
+  width: 64px;
+  height: 64px;
+  position: relative;
+}
+
+.spiral span {
+  position: absolute;
+  inset: 0;
+  --base: calc(var(--i) * 120deg);
+  animation: swirl 1.9s linear infinite;
+  will-change: transform, opacity;
+}
+
+.spiral span::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2563eb;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes swirl {
+  0% {
+    transform: rotate(var(--base)) translateX(0);
+    opacity: 0.85;
+  }
+  10% {
+    transform: rotate(calc(var(--base) + 120deg)) translateX(2px);
+    opacity: 0.9;
+  }
+  20% {
+    transform: rotate(calc(var(--base) + 240deg)) translateX(5px);
+    opacity: 0.95;
+  }
+  30% {
+    transform: rotate(calc(var(--base) + 360deg)) translateX(9px);
+    opacity: 1;
+  }
+  40% {
+    transform: rotate(calc(var(--base) + 480deg)) translateX(14px);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(calc(var(--base) + 600deg)) translateX(18px);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotate(calc(var(--base) + 720deg)) translateX(14px);
+    opacity: 1;
+  }
+  70% {
+    transform: rotate(calc(var(--base) + 840deg)) translateX(9px);
+    opacity: 0.98;
+  }
+  80% {
+    transform: rotate(calc(var(--base) + 960deg)) translateX(5px);
+    opacity: 0.94;
+  }
+  90% {
+    transform: rotate(calc(var(--base) + 1080deg)) translateX(2px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotate(calc(var(--base) + 1200deg)) translateX(0);
+    opacity: 0.85;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spiral span {
+    animation: none;
+  }
+}
+
+.myapp-loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transform: translateZ(0);
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.loader-text2.wave-spot {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  background: linear-gradient(90deg, rgba(17, 24, 39, 0.55) 0%, rgba(17, 24, 39, 0.55) 38%, #3674d9 50%, rgba(54, 116, 217, 0.55) 58%, rgba(17, 24, 39, 0.55) 72%, rgba(17, 24, 39, 0.55) 100%);
+  background-size: 320% 100%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation:
+    waveSweep 1.8s ease-in-out infinite,
+    subtleScale 1.8s ease-in-out infinite;
+  will-change: background-position, transform;
+}
+
+@keyframes waveSweep {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes subtleScale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader-text2.wave-spot {
+    animation: none;
+    color: #3674d9;
+    background: none;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.progress-bar {
+    width: 70%;
+    max-width: 320px;
+    height: 6px;
+    background: rgba(25, 118, 210, 0.15) !important;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 36px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background: #1976d2;
+  position: relative;
+  transition: width 0.3s ease-out;
+}
+
+.progress-fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  animation: shine 1.5s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+#logoImg2 {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  height: 60px;
+  user-select: none;
+}
+
+.overlay-btn {
+  position: absolute;
+  bottom: calc(30px + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+
+  width: 100%;
+  height: 80px;
+  border-radius: 16px;
+  max-width: 480px;
+
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  font-weight: 800;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+
+  /* ✨ 추가 */
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.3s ease;
+}
+
+.overlay-btn.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.overlay-btn-img {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.overlay-btn-img img {
+  flex: 1;
+  min-width: 0;
+  height: auto;
+}
+
+#overlayBtnText {
+  margin-bottom: 12px;
+}
+
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar > .container,
+.navbar > .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}

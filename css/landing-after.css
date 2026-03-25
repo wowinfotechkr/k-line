@@ -1,0 +1,48 @@
+.language-switcher {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.language-switcher select {
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.card-height {
+  margin-bottom: 40px;
+}
+.request-text {
+  min-height: 77px;
+}
+@media (max-width: 768px) {
+  .card-height {
+    margin-bottom: 60px;
+  }
+  .request-text {
+    min-height: 0px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+img.blur-up {
+  filter: blur(18px);
+  transform: scale(0.9);
+  transition:
+    filter 400ms ease,
+    transform 400ms ease,
+    opacity 400ms ease;
+  opacity: 0.9;
+}
+
+img.blur-up.loaded {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+}
