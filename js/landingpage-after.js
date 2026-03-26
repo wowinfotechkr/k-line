@@ -80,6 +80,33 @@ var langObj = {
     kline_more: "더보기",
     LANDING_AR_LOADING_TEXT : "로딩중입니다.<br>잠시만 기다려주세요.",
   },
+  ja: {
+    home: "ホーム",
+    introduction: "紹介",
+    inquiry: "お問い合わせ",
+    banner_text: "人気の韓国商品を<br>簡単＆スピーディーに！<br>",
+    warning_delivery: "配送日は変更される場合があります。",
+    app_download: "アプリダウンロード",
+    app_install: "信頼できる韓国商品だけ厳選しているため,<br>安心してご購入いただけます。",
+    request_purchase: "韓国商品を簡単に購入できます",
+    request_01_title: "1. 商品の購入",
+    request_01_content: "韓国商品をお手頃な価格で購入できます。",
+    request_02_title: "2. お支払い",
+    request_02_content: "注文した商品を簡単にお支払いできます。",
+    request_03_title: "3. 検品",
+    request_03_content: "アプリの通知で配送状況を確認できます。",
+    request_04_title: "4. 配送追跡",
+    request_04_content: "配送状況はアプリで簡単に確認できます。",
+    inquery_msg: "ご不明な点がございましたら、<br>下記メールまでお問い合わせください。",
+    terms_title: "利用規約／プライバシーポリシー",
+    terms_of_use: "利用規約",
+    privacy_policy: "プライバシーポリシー",
+    phone_number: "代表電話番号",
+    app_open_1: "人気の韓国商品をチェック！",
+    kline_open_app: "インストール",
+    kline_more: "詳細",
+    LANDING_AR_LOADING_TEXT: "読み込み中です...<br>しばらくお待ちください。",
+  },
 };
 
 
@@ -184,6 +211,12 @@ $(document).ready(function () {
       "ส่งตรงสินค้า K จากเกาหลี<br>ถึงทั่วโลก!<br>",
       "ติดตามสถานะการจัดส่ง<br>ได้แบบเรียลไทม์!<br>",
       "สินค้าเกาหลี <br>รวดเร็วและปลอดภัย!<br>",
+    ],
+    ja: [
+      "人気の韓国商品を<br>お手頃な価格で<br>",
+      "韓国商品を世界中へ<br>直接お届け！<br>",
+      "配送状況を<br>リアルタイムで一目で確認！<br>",
+      "欲しい韓国商品を<br>迅速かつ安全にお届け！<br>",
     ],
   };
 
