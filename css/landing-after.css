@@ -12,9 +12,11 @@
 .card-height {
   margin-bottom: 40px;
 }
+/*
 .request-text {
   min-height: 77px;
 }
+*/
 @media (max-width: 768px) {
   .card-height {
     margin-bottom: 60px;
