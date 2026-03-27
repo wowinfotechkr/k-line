@@ -409,6 +409,7 @@ function showKlineSheet() {
       e.stopPropagation();
       hideSheet();
       if (typeof window.handleBuyNow === "function") {
+        saveUserLog("앱 설치 팝업 - 설치");
         window.handleBuyNow(); // 기존 앱 열기 함수 호출
       }
     });
@@ -416,6 +417,7 @@ function showKlineSheet() {
   }
   closeBtn.addEventListener("click", (e) => {
     e.stopPropagation();
+    saveUserLog("앱 설치 팝업 - 더보기");
     sheet.style.transform = "translateY(100%)";
     setTimeout(() => {
       sheet.style.display = "none";
