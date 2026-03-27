@@ -107,6 +107,33 @@ var langObj = {
     kline_more: "詳細",
     LANDING_AR_LOADING_TEXT: "読み込み中です...<br>しばらくお待ちください。",
   },
+    pt: {
+    home: "Início",
+    introduction: "Introdução",
+    inquiry: "Contato",
+    banner_text: "Produtos coreanos<br>de forma fácil e rápida!<br>",
+    warning_delivery: "A data de entrega pode ser alterada devido a circunstâncias especiais no transporte aéreo.",
+    app_download: "Baixar App",
+    app_install: "Selecionamos cuidadosamente apenas produtos coreanos confiáveis,<br>para que você possa comprar com segurança e tranquilidade.",
+    request_purchase: "Compre produtos coreanos com facilidade",
+    request_01_title: "1. Compra de produtos",
+    request_01_content: "Você pode comprar produtos coreanos a preços acessíveis.",
+    request_02_title: "2. Pagamento",
+    request_02_content: "Pague facilmente pelos produtos que você pediu.",
+    request_03_title: "3. Inspeção",
+    request_03_content: "Você pode verificar o status da entrega por notificações no app.",
+    request_04_title: "4. Rastreamento de Pedido",
+    request_04_content: "Você pode acompanhar o status da entrega pelo app.",
+    inquery_msg: "Dúvidas sobre o serviço?<br>Entre em contato pelo e-mail abaixo.",
+    terms_title: "Termos de Uso / Política de Privacidade",
+    terms_of_use: "Termos de Uso",
+    privacy_policy: "Política de Privacidade",
+    phone_number: "Telefone",
+    app_open_1 : "Confira os produtos coreanos que são tendência!",
+    kline_open_app: "Instalar",
+    kline_more: "Mais",
+    LANDING_AR_LOADING_TEXT : "Carregando...<br>Por favor, aguarde um momento.",
+  },
 };
 
 
@@ -217,6 +244,12 @@ $(document).ready(function () {
       "韓国商品を世界中へ<br>直接お届け！<br>",
       "配送状況を<br>リアルタイムで一目で確認！<br>",
       "欲しい韓国商品を<br>迅速かつ安全にお届け！<br>",
+    ],
+    pt: [
+      "Produtos coreanos populares<br>Preços acessíveis<br>",
+      "Envio direto de K-products<br>para todo o mundo!<br>",
+      "Acompanhe sua entrega<br>em tempo real!<br>",
+      "Seus produtos coreanos favoritos<br>com entrega rápida e segura!<br>",
     ],
   };
 

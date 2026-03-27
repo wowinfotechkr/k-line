@@ -23,6 +23,12 @@ var langObj = {
     LOADING_TEXT2: "少々お待ちください。",
     LOADING_APP_BTN: "公式アプリで今すぐ始める",
   },
+  pt: {
+    LOADING_TEXT1: "Conectando ao K-Line",
+    LOADING_TEXT1_2: "para você explorar produtos coreanos.",
+    LOADING_TEXT2: "Por favor, aguarde um momento.",
+    LOADING_APP_BTN: "Começar no app oficial",
+  },
 };
 
 function applyLanguage(lang) {
@@ -47,7 +53,7 @@ function getModeParam() {
 }
 
 function getLang() {
-  const supported = ["ko", "en", "th","ja"];
+  const supported = ["ko", "en", "th", "ja", "pt"];
   let lang = getLangParam();
 
   if (!supported.includes(lang)) {
